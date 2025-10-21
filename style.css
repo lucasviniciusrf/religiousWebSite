@@ -3,66 +3,83 @@ body {
   font-family: Arial, sans-serif;
   padding: 0px;
   line-height: 1.6;
-  overflow-x: hidden; /* corta o que sai da tela */
+  overflow-x: hidden;
+  /* corta o que sai da tela */
 
 }
 
 
-h1, h2 {
+h1,
+h2 {
   color: #333;
 }
 
-.tituloPosicao{
-  position: relative; left: 500px;
+.tituloPosicao {
+  position: relative;
+  left: 500px;
 }
-.capaPosicao{
-  position: relative; left: 300px; 
+
+.capaPosicao {
+  position: relative;
+  left: 300px;
   top: 200px;
 }
-.corTitulo h1{
+
+.corTitulo h1 {
   color: red;
-  font-size: 40px;  
+  font-size: 40px;
 }
-.subtitulo h3{
+
+.subtitulo h3 {
   color: black;
   font-weight: 100;
 
 }
 
-.moverTexto-Caixa{
-  position: relative; left: -55px;
+.moverTexto-Caixa {
+  position: relative;
+  left: -55px;
   top: -50px;
 }
-.caixa{
-  position: relative;left: 900px;
-  align-items: flex-start; /* Alinha pelo topo */
+
+.caixa {
+  position: relative;
+  left: 900px;
+  align-items: flex-start;
+  /* Alinha pelo topo */
   background-color: #ffffff;
   padding: 20px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   gap: 20px;
   margin: 30px 0;
-  flex-wrap: wrap; /* Para se ajustar em telas menores */
+  flex-wrap: wrap;
+  /* Para se ajustar em telas menores */
   width: 365px;
   top: -50px;
-  
-}
-.texto{
-  position: relative; left: -2px;
+
 }
 
-.box-texto input{
+.texto {
+  position: relative;
+  left: -2px;
+}
+
+.box-texto input {
   border-radius: 8px;
-  position: relative; top: -5px;
+  position: relative;
+  top: -5px;
   width: 350px;
   height: 40px;
-  padding-left: 15px; /* adiciona espaço interno à esquerda */
+  padding-left: 15px;
+  /* adiciona espaço interno à esquerda */
 
 }
 
 /* Container que junta imagem e texto lado a lado */
 .imagem-texto {
   display: flex;
-  align-items: flex-start; /* Alinha pelo topo */
+  align-items: flex-start;
+  /* Alinha pelo topo */
   background-color: #add8e6;
   padding: 20px;
   border-radius: 10px;
@@ -86,33 +103,38 @@ h1, h2 {
   text-align: justify;
 }
 
-.imagemEtexto{
+.imagemEtexto {
   display: flex;
   gap: 20px;
-  
-  
+
+
 }
-.textoComplemento{
+
+.textoComplemento {
   width: 70%;
   text-align: justify
-
 }
 
 .botaoCliqueAqui {
-  display: inline-block;
-  background-color: #674848;
-  color: white;
+  display: flex;
+
+  justify-content: center;
+}
+
+.botaoCliqueAqui a {
+  width: 150px;
   padding: 12px 25px;
-  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
+  background-color: #674848;
+  color: white;
+  border-radius: 30px;
   position: relative;
-  left: 635px;
-  top: -50px;
+  margin-top: 30px;
 }
 
-.botaoCliqueAqui:hover {
+.botaoCliqueAqui a:hover {
   background-color: #372828;
 }
 
@@ -128,11 +150,11 @@ h1, h2 {
   text-align: center;
   height: 35px;
   padding-top: 10px;
-  
+
 
 }
 
-.esqueceuSenha{
+.esqueceuSenha {
   position: relative;
   left: 5px;
   text-align: center;
@@ -148,12 +170,14 @@ h1, h2 {
   display: inline-block;
   background-color: #674848;
   color: white;
-  padding: 4px 7px; 
+  padding: 4px 7px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
-  position: relative; top: -20px; left: 70px;
+  position: relative;
+  top: -20px;
+  left: 70px;
   width: 225px;
   text-align: center;
   height: 35px;
@@ -167,16 +191,17 @@ h1, h2 {
 }
 
 
-.salvarBotao{
+.salvarBotao {
   display: inline-block;
   background-color: #674848;
   color: white;
-  padding: 4px 7px; 
+  padding: 4px 7px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
-  position: relative; left: 70px;
+  position: relative;
+  left: 70px;
   width: 225px;
   text-align: center;
   height: 35px;
@@ -184,6 +209,7 @@ h1, h2 {
   position: relative;
   top: -30px;
 }
+
 .salvarBotao:hover {
   background-color: #372828;
 }
@@ -194,16 +220,18 @@ h1, h2 {
   flex-direction: column;
 }
 
-.txtVela{
+.txtVela {
   position: relative;
   text-align: center;
 }
 
-.velaImg{
-  position: relative;left: 690px;
-  top: -80px;
+.velaImg {
+  display: flex;
+  justify-content: center;
+  height: 150px;
 }
-.vela-botao{
+
+.vela-botao {
   position: center;
   left: 100px;
 }
@@ -217,9 +245,12 @@ h1, h2 {
 /* Container horizontal */
 .box-barraTarefas section {
   display: flex;
-  gap: 30px; /* Espaço entre os itens */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  gap: 30px;
+  /* Espaço entre os itens */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
 }
 
 .box-barraTarefas a {
@@ -229,7 +260,8 @@ h1, h2 {
   border-radius: 50px;
   transition: background-color 0.3s;
   font-family: Cambria, Cochin;
-  position: relative; left: 0px;
+  position: relative;
+  left: 0px;
 }
 
 .entrarButton {
