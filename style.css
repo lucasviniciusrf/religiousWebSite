@@ -81,17 +81,20 @@ h1, h2 {
 
 /* Texto ao lado da imagem */
 .txt {
-  max-width: 1200px;
+  width: 90%;
   font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
 }
 
 .imagemEtexto{
   display: flex;
   gap: 20px;
   
+  
 }
 .textoComplemento{
-  max-width: 1000px;
+  width: 70%;
+  text-align: justify
 
 }
 
