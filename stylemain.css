@@ -9,17 +9,10 @@ body {
     text-align: center;
 }
 
-/* header {
-  background-image: url('assets/cruz.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo esquerda, h1 direita */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,13 +20,18 @@ header {
   height: 150px;
   color: #674848; /* se quiser o texto visível */
   background-color: rgb(248, 248, 248);
+  justify-content: space-around;
 }
 
 header h1 {
   padding: 0rem;
   margin: 0;
   font-size: 3em;
+  position: relative;
   text-align: center;
+}
+header .logoFake{
+  width: 100px;
 }
 header p {
     padding: 0rem;
