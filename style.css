@@ -14,55 +14,48 @@ h2 {
   color: #333;
 }
 
-.tituloPosicao {
-  position: relative;
-  left: 500px;
+.containerGeral {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 80px auto;
+  flex-wrap: wrap; /* ajuda na responsividade */
 }
 
-.capaPosicao {
-  position: relative;
-  right: 500px;
-  top: 200px;
+/* Lado esquerdo (texto e subtítulo) */
+.textoLado {
+  flex: 1;
+  min-width: 300px;
 }
 
-.corTitulo h1 {
-  color: red;
-  font-size: 40px;
-}
-
-.subtitulo h3 {
-  color: black;
-  font-weight: 100;
-
-}
-
-.moverTexto-Caixa {
-  position: relative;
-  left: -55px;
-  top: -50px;
-}
-
+/* Caixa de login */
 .caixa {
-  position: relative;
-  left: 1200px;
-  align-items: flex-start;
-  /* Alinha pelo topo */
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   padding: 20px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   gap: 20px;
-  margin: 30px 0;
-  flex-wrap: wrap;
-  /* Para se ajustar em telas menores */
   width: 365px;
-  top: -50px;
-
+  border-radius: 10px;
 }
 
-.texto {
-  position: relative;
-  left: -2px;
+/* Título */
+.corTitulo h1 {
+  color: red;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
+
+/* Subtítulo */
+.subtitulo h3 {
+  color: black;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+
 
 .box-texto input {
   border-radius: 8px;
@@ -106,14 +99,14 @@ h2 {
 .imagemEtexto {
   display: flex;
   gap: 20px;
-
-
 }
 
 .textoComplemento {
   width: 70%;
   text-align: justify
 }
+
+
 
 .botaoCliqueAqui {
   display: flex;
@@ -166,6 +159,7 @@ h2 {
   background-color: #1f4079;
 }
 
+
 .botaoCadastrar {
   display: inline-block;
   background-color: #674848;
@@ -176,12 +170,11 @@ h2 {
   font-weight: bold;
   transition: background-color 0.3s;
   position: relative;
-  top: -20px;
-  left: 70px;
-  width: 225px;
+  width: 96%;
   text-align: center;
   height: 35px;
   padding-top: 10px;
+  justify-content: center;
 
 
 }
@@ -201,13 +194,9 @@ h2 {
   font-weight: bold;
   transition: background-color 0.3s;
   position: relative;
-  left: 70px;
-  width: 225px;
+  width: 96%;
   text-align: center;
   height: 35px;
-  padding-top: 10px;
-  position: relative;
-  top: -30px;
 }
 
 .salvarBotao:hover {
@@ -288,9 +277,11 @@ nav a {
   
 }
 
-/* 
-@media (max-width: 600px) {
-  .imagem-texto {
-    flex-wrap: wrap;
+
+@media (min-width: 1200px) {
+  .containerGeral {
+    justify-content: center; /* centraliza o conteúdo */
+    gap: 80px; /* aumenta o espaço entre texto e box */
+    max-width: 1400px; /* dá mais respiro em TVs */
   }
-} */
+}  
