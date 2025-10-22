@@ -21,7 +21,7 @@ h2 {
 
 .capaPosicao {
   position: relative;
-  left: 300px;
+  right: 500px;
   top: 200px;
 }
 
@@ -44,7 +44,7 @@ h2 {
 
 .caixa {
   position: relative;
-  left: 900px;
+  left: 1200px;
   align-items: flex-start;
   /* Alinha pelo topo */
   background-color: #ffffff;
