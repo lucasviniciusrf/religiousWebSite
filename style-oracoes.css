@@ -1,0 +1,44 @@
+.section-oracoes { padding: 40px 20px; }
+.section-oracoes h2 { color: #674848; margin: 0 0 10px 0; }
+.section-oracoes p.lead { max-width: 950px; margin: 0 auto 24px auto; line-height: 1.8; }
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+  padding: 10px 0 30px 0;
+}
+
+.pray-card {
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  padding: 16px;
+  transition: transform .25s ease, box-shadow .25s ease;
+  text-align: left;
+}
+.pray-card:hover { transform: translateY(-4px); box-shadow: 0 10px 22px rgba(0,0,0,0.10); }
+
+.pray-card a { text-decoration: none; color: inherit; }
+.pray-card img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; display: block; }
+
+.pray-card h3 { margin: 12px 0 6px; color: #5a4423; }
+.pray-card p { margin: 0 0 12px 0; color: #4b3a26; opacity: .85; }
+
+.pray-card .chip-row { display:flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+.pray-card .chip {
+  background: #31280d;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: .9rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.pray-card .chip:hover { filter: brightness(.95); }
+
+/* Quando entrar na aba, ter um movimento suave de scroll */
+html { scroll-behavior: smooth; }
